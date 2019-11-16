@@ -1,5 +1,5 @@
 # Tharun Saranga is the Boss
-Deep Reinforcement Trading bot
+Deep Reinforcement Trading 
 
 
 Blah Blah
