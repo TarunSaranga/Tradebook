@@ -1,4 +1,4 @@
-# BlueNotebook
+# Tharun Saranga is the Boss
 Deep Reinforcement Trading bot
 
 
