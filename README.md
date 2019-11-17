@@ -64,9 +64,10 @@ AutoCorrelation Plot:
 
 
 This price data in this form would not help much. Indicators are functions which take one or more of these price values to make a new insight into the behavior of the stock. The following three indicators are used to agument the data. These indicators have been created using ta-lib library.
-Close/SMA:
-BollingerBand Value:
+Close/SMA: 
+BollingerBand Value: 
 RSI:
+
 ---
 
 # Libraries
