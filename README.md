@@ -88,6 +88,8 @@ These indicators are calculated using TA-lib library.
 ## scikit-learn
 
 ## Tensorforce
+Tensorforce is an open source Deep Reinforcement Library that abstracts Reinforcement Learning Primitives with Tensorflow backend. It provides modularity and gives us the freedom to concentrate on the application rather than the specific implementation of the algorithm which is similar for every application. There are four high-level abstractions: Environment, Agent, Runner and Model. The Model abstraction sits inside the Agent and gives us the ability to change the internal mechanisms of the Agent itself. The Environment abstract is to help create custom user environment details. Runner is to execute the model.
+
 ```python
 import tensorforce.agents import agents
 
