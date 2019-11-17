@@ -1,5 +1,5 @@
-<img src="https://latex.codecogs.com/gif.latex?O_t=\text {$$\psi$$ } t " /> 
-Deep Reinforcement Trading 
+
+<center>Deep Reinforcement Trading <\center>
 
 
 Blah Blah
