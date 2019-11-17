@@ -1,5 +1,5 @@
 
-<center>Deep Reinforcement Trading <\center>
+<center>Deep Reinforcement Trading </center>
 
 
 Blah Blah
