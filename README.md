@@ -80,12 +80,45 @@ These indicators are calculated using TA-lib library.
 ## scikit-learn
 
 ## Tensorforce
-Tensorforce is an open source Deep Reinforcement Library that abstracts Reinforcement Learning Primitives with Tensorflow backend. It provides modularity and gives us the freedom to concentrate on the application rather than the specific implementation of the algorithm which is similar for every application. There are four high-level abstractions: Environment, Agent, Runner and Model. The Model abstraction sits inside the Agent and gives us the ability to change the internal mechanisms of the Agent itself. The Environment abstract is to help create custom user environment details. Runner is to execute the model.
+```python
+import tensorforce.agents import agents
 
-%%%%% Getting Started Code%%%%%%%%%%%%%
+import tensorforce.environments import Environment
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-Code brief explaination
+#create and initialize environment
+
+environment = Environment.create(environment=Environment)
+
+#Create agent
+
+agent = Agent.create(agent=agent)
+
+agent.initialize()
+
+states = environment.reset()
+
+agent.reset()
+
+while not terminal:
+
+    actions = agent(states=states)
+
+    next_state, terminal, reward = environment.execute(actions)
+
+    agent.observe(reward=reward, terminal=terminal)
+
+agent.close()
+environment.close()
+```
+
+The Environment class is created by inheriting the Environment abstract.
+The agent is created by providing required parameters as an input for the Agent class.
+The agent initialization creates the tensorflow network and initializes all the network connections and memory required to store the state variables and action rewards.
+The agents returns actions based on the state variable passed to it. These actions are passed to environment.
+The environment executes these actions and gives back the reward associated with that action and if it is the terminal state.
+The agent observes the reward and stores it in its memory to retrieve it another time.
+
+---
 
 ---
 
