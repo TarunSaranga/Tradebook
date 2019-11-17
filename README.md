@@ -1,6 +1,11 @@
+# Introduction
+
 # Problem Statement
 
-# Methods Used
+---
+
+# Methods Explored
+## SVM
 
 ## Deep Q-Learning
 ### Q-Learning 
@@ -31,3 +36,32 @@ The process of Q-Learning aims to create a Q-state vs action matrix for the agen
 The working step for Deep Q-Learning is to feed the neural network with an initial state, which returns the Q-value of all possible actions as a result. 
 
 Therefore, Deep Q-Learning is a process in which an agent iteratively learns to maximize its reward in a given environment by exploring many possible actions at each achieved state using an E-greedy policy and a neural network to approximate Q-values.
+
+---
+
+# Data
+
+---
+
+# Libraries
+## scikit-learn
+
+## Tensorforce
+
+---
+
+# Methodology
+## SVM
+### Linear
+
+### Ply....
+
+## DQN
+
+---
+
+# Results
+
+---
+
+# Conclusion
