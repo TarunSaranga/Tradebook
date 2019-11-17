@@ -8,6 +8,8 @@
 
 **Q-Learning** is a type of Reinforcement Learning which uses *Q-Values*, a.k.a action values, to improve the behaviour of the agent in an iterative process. These Q-Values are defined for states and actions. Thus, `Q(S, A)` is an estimate of the quality of the action `A` at state `Q`. `Q(S, A)` can be represented in terms of the Q-value of the next state `S'` as follows - 
 
+![Bellman](https://www.github.com/tarunsaranga/annotations/bellman.png)
+
 This is the *Bellman Equation*. It shows that the maximum future reward equals the reward received by the agent for entering the current state `S` added to the maximum future reward for the next state `S'`. With Q-Learning, the Q-values can be approximated iteratively with the help of the Bellman equation. This is also called Temporal Difference or *TD-Update rule* - 
 
 
