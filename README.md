@@ -92,29 +92,22 @@ Tensorforce is an open source Deep Reinforcement Library that abstracts Reinforc
 
 ```python
 import tensorforce.agents import agents
-
 import tensorforce.environments import Environment
 
 #create and initialize environment
-
 environment = Environment.create(environment=Environment)
 
 #Create agent
-
 agent = Agent.create(agent=agent)
 
 agent.initialize()
 
 states = environment.reset()
-
 agent.reset()
 
 while not terminal:
-
     actions = agent(states=states)
-
     next_state, terminal, reward = environment.execute(actions)
-
     agent.observe(reward=reward, terminal=terminal)
 
 agent.close()
