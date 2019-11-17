@@ -46,16 +46,23 @@ Therefore, Deep Q-Learning is a process in which an agent iteratively learns to 
 Stock data or any Financial data is a timeseries values in certain frequency interval. In this project two different frequency data are used. Google stock data with one day frequency has been downloaded from Yahoo Finance in csv form and preprocessed to convert into to the required form for this project. JustDial stock data with one minute frequency has been scraped from Kite (An online trading platform) in json format. This is converted to csv and preprocessed to get required form. Stock data usually consists of Open, High, Low, Close and Volume Traded for a particular time period.
 
 GOOGLE:
-Date-Range:
-Price-Range:
-Number of rows:
+
+
+Price Plot:
+
+Indicators Plot:
+
 LagPlot:
 
 JustDial:
-Date-Range:
-Price-Range:
-Number of rows:
+
+
+Price Plot:
+
+Indicators Plot:
+
 LagPlot:
+
 
 This price data in this form would not help much. Indicators are functions which take one or more of these price values to make a new insight into the behavior of the stock. The following three indicators are used to augment the data.
 Close/SMA: Close value and Simple Moving Average alone cannot give much information to act upon, but when combined, the ratio Close/SMA gives us the trend of the price moment reacting to even small changes.
