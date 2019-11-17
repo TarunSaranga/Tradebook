@@ -65,9 +65,13 @@ LagPlot:
 
 
 This price data in this form would not help much. Indicators are functions which take one or more of these price values to make a new insight into the behavior of the stock. The following three indicators are used to augment the data.
+
 Close/SMA: Close value and Simple Moving Average alone cannot give much information to act upon, but when combined, the ratio Close/SMA gives us the trend of the price moment reacting to even small changes.
+
 Bollinger Band Value: Bollinger Bands are two line drawn at two standard deviations apart. Upper band, Middle band, and Lower band. The Middle band is a moving average line. The BB value is the calculated using these three values as (UpperBand-LowerBand)/MiddleBand
+
 RSI: Relative Strength Index is a momentum index that indicates the magnitude of recent changes in the price that evaluate to over bought and over sold conditions.
+
 These indicators are calculated using TA-lib library.
 
 ---
