@@ -1,4 +1,4 @@
-# Problem Statement
+<center><h1>Problem Statement</h1></center>
 
 # Methods Used
 
