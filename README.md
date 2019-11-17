@@ -1,4 +1,4 @@
-# Tharun Saranga is the Boss
+$\psi$
 Deep Reinforcement Trading 
 
 
