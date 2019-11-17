@@ -1,5 +1,4 @@
-<center>Deep Q Reinforcement Learning for Financial Data</center>
-================================================
+# Deep Q Reinforcement Learning for Financial Data
 
 # Introduction
 Reinforcement Learning is a paradigm that iterates over thousands of combinations of actions and achieves a strategy that maximizes the cumulative reward. Deep Reinforcement Learning uses deep neural networks for implementing reinforcement learning. In this project we develop a Deep Reinforcement Learning Algorithm to increase the profits from a given stock. We also implement a supervised learning algorithm using regression to predict the future stock prices and maximize the profits using the predictions. We then contrast the results from both the methods based on different metrics.
