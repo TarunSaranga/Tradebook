@@ -1,3 +1,5 @@
+# Deep Q Reinforcement Learning for Financial Data
+
 # Introduction
 
 # Problem Statement
@@ -40,13 +42,43 @@ Therefore, Deep Q-Learning is a process in which an agent iteratively learns to 
 ---
 
 # Data
+Stock data or any Financial data is a timeseries values in certain frequency interval. In this project two different frequency data are used. Google stock data with one day frequency has been downloaded from Yahoo Finance in csv form and preprocessed to convert into to the required form for this project. JustDial stock data with one minute frequency has been scraped from Kite (An online trading platform) in json format. This is converted to csv and preprocessed to get required form. Stock data usually consists of Open, High, Low, Close and Volume Traded for a particular time period. 
 
+GOOGLE: 
+Date-Range:
+Price-Range:
+Number of rows:
+Trend:
+Seasonality:
+LagPlot:
+AutoCorrelation Plot:
+
+JustDial: 
+Date-Range:
+Price-Range:
+Number of rows:
+Trend:
+Seasonality:
+LagPlot:
+AutoCorrelation Plot:
+
+
+This price data in this form would not help much. Indicators are functions which take one or more of these price values to make a new insight into the behavior of the stock. The following three indicators are used to agument the data. These indicators have been created using ta-lib library.
+Close/SMA:
+BollingerBand Value:
+RSI:
 ---
 
 # Libraries
 ## scikit-learn
 
 ## Tensorforce
+Tensorforce is an open source Deep Reinforcement Library that abstracts Reinforcement Learning Primitives with Tensorflow backend. It provides modularity and gives us the freedom to concentrate on the application rather than the specific implementation of the algorithm which is similar for every application. There are four high-level abstractions: Environment, Agent, Runner and Model. The Model abstraction sits inside the Agent and gives us the ability to change the internal mechanisms of the Agent itself. The Environment abstract is to help create custom user environment details. Runner is to execute the model.
+
+%%%%% Getting Started Code%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+Code brief explaination
 
 ---
 
