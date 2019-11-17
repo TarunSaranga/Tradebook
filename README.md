@@ -71,7 +71,7 @@ These indicators are calculated using TA-lib library.
 ![google_indicators](annotations/google_indicators.png)
 
 ### Lag Plot
-<center>![google_lag_plot](annotations/google_lag_plot.png)</center>
+![google_lag_plot](annotations/google_lag_plot.png)
 
 ## Just Dial stock data
 ### Price Plot
@@ -84,7 +84,7 @@ These indicators are calculated using TA-lib library.
 ![JD_close](annotations/JD_indicators.png)
 
 ### Lag Plot
-<center>![JD_lag_plot](annotations/JD_lag_plot.png)</center>
+![JD_lag_plot](annotations/JD_lag_plot.png)
 
 ---
 
