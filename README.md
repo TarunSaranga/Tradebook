@@ -48,6 +48,8 @@ Stock data or any Financial data is a timeseries values in certain frequency int
 ## Google
 ### Price Plot
 ![google_close](annotations/google_data_close.png)
+
+### Volume Plot
 ![google_volume](annotations/google_data_volume.png)
 
 ### Indicators Plot
@@ -59,6 +61,8 @@ Stock data or any Financial data is a timeseries values in certain frequency int
 ## JustDial
 ### Price Plot
 ![JD_close](annotations/JD_data_close.png)
+
+### Volume Plot
 ![JD_volume](annotations/JD_data_volume.png)
 
 ### Indicators Plot
