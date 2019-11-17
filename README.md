@@ -1,4 +1,4 @@
-$\psi$
+$$\psi$$
 Deep Reinforcement Trading 
 
 
