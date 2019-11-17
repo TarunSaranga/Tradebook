@@ -43,9 +43,24 @@ Therefore, Deep Q-Learning is a process in which an agent iteratively learns to 
 ---
 
 # Data
-Stock data or any Financial data is a timeseries values in certain frequency interval. In this project two different frequency data are used. Google stock data with one day frequency has been downloaded from Yahoo Finance in csv form and preprocessed to convert into to the required form for this project. JustDial stock data with one minute frequency has been scraped from Kite (An online trading platform) in json format. This is converted to csv and preprocessed to get required form. Stock data usually consists of Open, High, Low, Close and Volume Traded for a particular time period.
+Any kind of Financial data or stock data is a timeseries values within a certain frequency interval. In this project two different frequency data have been used. 
+1. Google stock data with one day frequency, downloaded from Yahoo Finance in csv form and preprocessed to convert into to the required form for this project. 
+2. JustDial stock data with one minute frequency has been scraped from Kite (An online trading platform) in json format. This is converted to csv and preprocessed to get required form. 
 
-## Google
+Both the stock's data consists of Open, High, Low, Close and Volume Traded for a particular time period. The price data in this form is not very helpful for the intended purpose. Indicators are functions which take one or more of these price values to make a new insight into the behavior of the stock. The following three indicators are added during preprocessing to augment the data -
+
+Close/SMA
+: Close value and Simple Moving Average alone cannot give much information to act upon, but when combined, the ratio Close/SMA gives us the trend of the price moment reacting to even small changes.
+
+Bollinger Band Value
+: Bollinger Bands are two line drawn at two standard deviations apart. Upper band, Middle band, and Lower band. The Middle band is a moving average line. The BB value is the calculated using these three values as (UpperBand-LowerBand)/MiddleBand
+
+RSI
+: Relative Strength Index is a momentum index that indicates the magnitude of recent changes in the price that evaluate to over bought and over sold conditions.
+
+These indicators are calculated using TA-lib library.
+
+## Google stock data
 ### Price Plot
 ![google_close](annotations/google_data_close.png)
 
@@ -55,10 +70,10 @@ Stock data or any Financial data is a timeseries values in certain frequency int
 ### Indicators Plot
 ![google_indicators](annotations/google_indicators.png)
 
-### LagPlot
-![google_lag_plot](annotations/google_lag_plot.png)
+### Lag Plot
+<center>![google_lag_plot](annotations/google_lag_plot.png)</center>
 
-## JustDial
+## Just Dial stock data
 ### Price Plot
 ![JD_close](annotations/JD_data_close.png)
 
@@ -68,19 +83,8 @@ Stock data or any Financial data is a timeseries values in certain frequency int
 ### Indicators Plot
 ![JD_close](annotations/JD_indicators.png)
 
-### LagPlot
-![JD_lag_plot](annotations/JD_lag_plot.png)
-
-
-This price data in this form would not help much. Indicators are functions which take one or more of these price values to make a new insight into the behavior of the stock. The following three indicators are used to augment the data.
-
-Close/SMA: Close value and Simple Moving Average alone cannot give much information to act upon, but when combined, the ratio Close/SMA gives us the trend of the price moment reacting to even small changes.
-
-Bollinger Band Value: Bollinger Bands are two line drawn at two standard deviations apart. Upper band, Middle band, and Lower band. The Middle band is a moving average line. The BB value is the calculated using these three values as (UpperBand-LowerBand)/MiddleBand
-
-RSI: Relative Strength Index is a momentum index that indicates the magnitude of recent changes in the price that evaluate to over bought and over sold conditions.
-
-These indicators are calculated using TA-lib library.
+### Lag Plot
+<center>![JD_lag_plot](annotations/JD_lag_plot.png)</center>
 
 ---
 
