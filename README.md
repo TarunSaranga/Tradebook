@@ -9,6 +9,11 @@ Reinforcement Learning is a paradigm that iterates over thousands of combination
 
 # Methods Explored
 ## SVM
+Support-Vector Machines are supervised learning models that analyse data for classification and regression analyses. Each data point is viewed as a p-dimensional vector and the model aims to classify these data points using a (p-1)-dimensional hyperplane. The best hyperplane is that which has the largest margin between the two classes. In case the data points are not linearly separable, we map them to a higher dimensional space where they can be easily separated. We use Kernel functions for this depending on the type of data we have.
+
+Linear Kernel is the best option when the dataset is linearly separable
+Radial Basis Function Kernel is used to map data points to an infinite-dimensional hyperspace to separate them. However, this often leads to overfitting and so we use generalisation to stop that.
+Polynomial Kernel is used to map data points to a higher dimension by using a polynomial function of degree 'd'. Using a higher degree tends to overfit the data.
 
 ## Deep Q-Learning
 ### Q-Learning 
