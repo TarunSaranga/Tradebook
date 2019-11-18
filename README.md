@@ -146,7 +146,7 @@ The decision labels are decided according to the trend in the market close price
 
 We then simulate the predictions with testing data starting with base cash and no stocks and see the cumulative profit at the end of each cycle. The simulation works on two basic conditions:
 - If the model predicts sale of stocks and number of stocks owned is not 0, we sell at the current price. The profit is calculated as the difference between the current price and the price at which stocks were bought. The profit is also added to the cash possessed.
-- If the model predicts purchasing of stocks and we have enough monetary reserves, the purchase is made at the current price (this is henceforth stored as the cost price af the stock) and the cash reserves are depleted accordingly.
+- If the model predicts purchasing of stocks and we have enough monetary reserves, the purchase is made at the current price (this is henceforth stored as the cost price of the stock) and the cash reserves are depleted accordingly.
 
 We compute the cumulative profit at the end and plot that.
 
