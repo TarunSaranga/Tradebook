@@ -202,12 +202,12 @@ A DQN Agent is created with a Deep Neural Network of LSTM, CNN and Dense network
 - Learning Rate = 0.0001
 - Discount Factor = 0.9
 - Epsilon Decay factor = 0.4  (units: Episodes)
-- Replay Memory = maximum episode timesteps
+- Replay Memory Size = maximum timesteps in an episode
 
 ### Experiment:
-The agent and the environment are initialized with the above specifications. The epsilon decay makes sure that the agent explores different states and stores them in memory for retrieving them later by executing an experience replay. The Learning rate has a huge effect on the performance of the agent, hence, different learning rates have been tried to and best learning rate has been selected.
+The agent and the environment are initialized with the above specifications. The epsilon decay rate makes sure that the agent explores different states and stores them in memory for retrieving them later by executing an experience replay. The *Learning Rate* has a huge effect on the performance of the agent, hence, different learning rates have been tried and the best learning rate has been selected.
 The agent has been trained on 1000 episodes with the above specifications.
-The mean rewards per episode:
+The mean rewards per episode are as follows:
 
 ## Reward Graph with different Learning Rates
 
@@ -219,7 +219,7 @@ The mean rewards per episode:
 ## DQN 
 ### Testing on Test data for 100 episodes after training the agent on Google Train data.
 ![Google100](annotations/RL/GoogleProfits100.png)
-Over the 100 episodes the agent's profits were below zero only two times.
+Over the 100 episodes the agent's profits were less than zero only twice.
 <br><br>
 
 ### Plots for best episodes while testing the agent on Google Test Data
@@ -227,7 +227,7 @@ Single episode Buy Sell Graph for Google:
 ![Googlebuysell](annotations/RL/GoogleBuySell.png)
 <br><br>
 
-Single episode Rewardvalue Graph for Google:
+Single episode Reward Value Graph for Google:
 ![Googlerewards](annotations/RL/GoogleRewards.png)
 <br><br>
 
@@ -235,7 +235,7 @@ Single episode Rewardvalue Graph for Google:
 Single episode Buy Sell Graph for JustDial:
 ![JDbuysell](annotations/RL/JustDialBuySell.png)
 <br><br>
-Single episode Rewardvalue Graph for JustDial:
+Single episode Reward Value Graph for JustDial:
 ![JDrewards](annotations/RL/JustDialRewards.png)
 <br><br>
 DQN agent shows promise of getting better with more computing power and learning time.
