@@ -213,12 +213,12 @@ The mean rewards per episode are as follows:
 # Results
 
 ## DQN 
-### Testing on Test data for 100 episodes after training the agent on Google Train data.
+### Test data Plot for 100 episodes after training the agent on Google Train data.
 ![Google100](annotations/RL/GoogleProfits100.png)
 Over the 100 episodes the agent's profits were less than zero only twice.
 <br><br>
 
-### Plots for best episodes while testing the agent on Google Test Data
+### Google Test Data
 Single episode Buy Sell Graph for Google:
 ![Googlebuysell](annotations/RL/GoogleBuySell.png)
 <br><br>
@@ -227,7 +227,7 @@ Single episode Reward Value Graph for Google:
 ![Googlerewards](annotations/RL/GoogleRewards.png)
 <br><br>
 
-### Plots for best episodes while testing the agent on JustDial Test Data
+### JustDial Test Data
 Single episode Buy Sell Graph for JustDial:
 ![JDbuysell](annotations/RL/JustDialBuySell.png)
 <br><br>
@@ -235,11 +235,16 @@ Single episode Reward Value Graph for JustDial:
 ![JDrewards](annotations/RL/JustDialRewards.png)
 <br><br>
 DQN agent shows promise of getting better with more computing power and learning time.
-## SVC
 
-Profittttugdkjskfjhdkjf
+## SVM
 
-Buyselll pihoihslfhdlnld
+### Google Test Data
+#### Linear Kernel Plot
 
+Profit Trend:
+![LinearProfit](annotations/svc/svc_google_linear_profit.png)
+
+Cumulative Profit Trend:
+![LinearProfitCum](annotations/svc/svc_google_linear_profit_cum.png)
 
 # Conclusion
