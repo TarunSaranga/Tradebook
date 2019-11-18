@@ -144,6 +144,9 @@ The decision labels are decided according to the trend in the market close price
 - If the next close price is higher than the current close price, the model decides to buy. This is because the price is expected to further rise increasing the value of stocks possessed.
 - If the next close price is lesser than the current close price, the model decides to sell. This is done so that in the expected eventuality where the price continues to fall, we can minimise the loss incurred.
 
+We then simulate the predictions with testing data starting with base cash and no stocks and see the cumulative profit at the end of each cycle. The simulation works on two basic conditions:
+- If the model predicts sale of stocks and number of stocks owned is not 0, we sell at the current price. The profit is calculated as the difference between the current price and the price at which stocks were bought. The profit is also added to the cash possessed.
+- If the model predicts purchasing of stocks and we have enough monetary reserves, the purchase is made at the current price (this is henceforth stored as the cost price af the stock) and the cash reserves are depleted accordingly.
 
 
 ## DQN
