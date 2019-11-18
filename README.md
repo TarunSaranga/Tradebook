@@ -142,27 +142,25 @@ The agent returns actions based on the state variables passed to it. These actio
 # Methodology
 ## SVM
 
-For each of the datasets an additional set of indicators are defined, on top of those defined for Reinforcement Learning -
+For both the datasets an additional set of indicators are defined, on top of those defined for Reinforcement Learning -
 
-O-C
+**O-C**
 : Defines the difference between opening and closing prices.
 
-STD_10 
+**STD_10** 
 : This is the Standard Deviation with a rolling window 10.
 
 The decision labels are decided according to the trend in the market close prices.
-- If the next close price is higher than the current close price, the model decides to buy. This is because the price is expected to further rise increasing the value of stocks possessed.
+- If the next close price is higher than the current close price, the model decides to buy. This is because the price is expected to further rise, thus increasing the value of stocks possessed.
 - If the next close price is lesser than the current close price, the model decides to sell. This is done to minimize losses incurred in the expected eventuality where the price continues to fall.
 
-The predictions are then simulated with testing data starting with base cash and no stocks and the cumulative profit at the end of each cycle are monitored. The simulation works on two basic conditions:
+The predictions are then simulated with testing data starting with some base cash and no stocks and the cumulative profits at the end of each cycle are monitored. The simulation works on two basic conditions:
 - If the model predicts sale of stocks and number of stocks owned is not 0, the agent sells at the current price. The profit is calculated as the difference between the current price and the price at which stocks were bought. The profit is also added to the cash possessed.
 - If the model predicts purchasing of stocks and the agent has enough monetary reserves, the purchase is made at the current price (this is henceforth stored as the cost price of the stock) and the cash reserves are depleted accordingly.
 
 The cumulative profit is calculated at the end and plotted.
 
-1. Using a Linear Kernel yields decent results since it assumes that the dataset is linearly separable.
-2. Using the RBF kernel gives the best results on the testing data with maximum profits.
-3. Using a Polynomial Kernel with degree 3 yields the poorest result of all.
+Analysing the graphs shows that the RBF Kernel provides maximum profits.
 
 ## DQN
 ## Experimental Setup
