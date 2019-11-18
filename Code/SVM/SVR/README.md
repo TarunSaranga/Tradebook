@@ -34,7 +34,7 @@ number of days.
 After simulating all the trades, we calculate the portfolio value at the end day of the testset, which is the sum of remaining 
 cash and the value of shares holding
 
-**Performance comparison:** The baseline is the portfolio value, if we just bought 1 million worth of shares on the
+**Performance comparison - GOOGL 2010-08-12 to 2017-08-09:** The baseline is the portfolio value, if we just bought 1 million worth of shares on the
 start day, and hold it till the last day. The portfolio value is the value of all shares on the end day.
 
 We observed that Support Vector Classification (SVC) performed better than Support Vector Regression (SVR).
@@ -67,8 +67,8 @@ RMSE of Test set: 3.9099973736201394
 The plots of portfolio value versus time, is shown below, for both SVC and SVR.
 The base line portfolio (Buy and Hold) is also shown in the plots for comparison.
 
-![alt text](https://github.com/sumanth232/test/blob/master/svc_.png)
-![alt text](https://github.com/sumanth232/test/blob/master/svr_.png)
+![alt text](https://github.com/TarunSaranga/Tradebook/blob/master/Code/SVM/SVR/svc_.png)
+![alt text](https://github.com/TarunSaranga/Tradebook/blob/master/Code/SVM/SVR/svr_.png)
 
 
 **Plots with good and bad trade entries :**
@@ -76,8 +76,8 @@ A smaller period is selected to show the good and bad trade entries of the SVR/S
 A green vertical line indicates the buy trade resulted in a profit after the fixed number of days when exited (sold).
 Similarly a red vertical line indicates a loss on the trade. 
 
-![alt text](https://github.com/sumanth232/test/blob/master/svc_trades.png)
-![alt text](https://github.com/sumanth232/test/blob/master/svr_trades.png)
+![alt text](https://github.com/TarunSaranga/Tradebook/blob/master/Code/SVM/SVR/svc_trades.png)
+![alt text](https://github.com/TarunSaranga/Tradebook/blob/master/Code/SVM/SVR/svr_trades.png)
 
 **Observation :**
 
