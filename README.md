@@ -247,4 +247,21 @@ Profit Trend:
 Cumulative Profit Trend:
 ![LinearProfitCum](annotations/svc/svc_google_linear_profit_cum.png)
 
+#### Radial Basis Function Kernel Plot
+
+Profit Trend:
+![LinearProfit](annotations/svc/svc_google_rbf_profit.png)
+
+Cumulative Profit Trend:
+![LinearProfitCum](annotations/svc/svc_google_rbf_profit_cum.png)
+
+#### Polynomial Kernel Plot
+
+Profit Trend:
+![LinearProfit](annotations/svc/svc_google_poly_profit.png)
+
+Cumulative Profit Trend:
+![LinearProfitCum](annotations/svc/svc_google_poly_profit_cum.png)
+
+
 # Conclusion
