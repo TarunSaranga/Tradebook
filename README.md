@@ -148,6 +148,13 @@ We then simulate the predictions with testing data starting with base cash and n
 - If the model predicts sale of stocks and number of stocks owned is not 0, we sell at the current price. The profit is calculated as the difference between the current price and the price at which stocks were bought. The profit is also added to the cash possessed.
 - If the model predicts purchasing of stocks and we have enough monetary reserves, the purchase is made at the current price (this is henceforth stored as the cost price af the stock) and the cash reserves are depleted accordingly.
 
+We compute the cumulative profit at the end and plot that.
+
+Using a Linear Kernel yields decent results since it assumes that the dataset is linearly separable.
+
+Using the RBF kernel gives the best results on the testing data with maximum profits.
+
+Using a Polynomial Kernel with degree 3 yields the poorest result of all.
 
 ## DQN
 
