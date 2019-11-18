@@ -158,8 +158,6 @@ The predictions are then simulated with testing data starting with some base cas
 
 The cumulative profit is calculated at the end and plotted.
 
-Analysing the graphs shows that the RBF Kernel provides maximum profits.
-
 ## DQN
 
 Before conducting the experiments, the Agent and the Environment are created.
@@ -295,4 +293,6 @@ Cumulative Profit Trend:
 #### Comparison of different Kernels
 
 ![KernelComp](annotations/svc/svc_jd_kernel_cmp.png)
+
+Analysing the graphs shows that the RBF Kernel provides maximum profits.
 # Conclusion
