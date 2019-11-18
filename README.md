@@ -145,6 +145,7 @@ The agent returns actions based on the state variables passed to it. These actio
 For each of the datasets an additional set of indicators are defined, on top of those defined for Reinforcement Learning -
 O-C
 : Defines the difference between opening and closing prices.
+
 STD_10 
 : This is the Standard Deviation with a rolling window 10.
 
