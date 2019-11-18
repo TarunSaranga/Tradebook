@@ -23,7 +23,8 @@ Support-Vector Machines are supervised learning models that analyse data for cla
 
 ![Bellman](annotations/bellman.png)
 
-![simply](annotations/memes/simply.jpg)
+![simply](annotations/memes/simply.png)
+
 This is the *Bellman Equation*. It shows that the maximum future reward equals the reward received by the agent for entering the current state `S` added to the maximum future reward for the next state `S'`. With Q-Learning, the Q-values can be approximated iteratively with the help of the Bellman equation. This is also called Temporal Difference or *TD-Update rule* - 
 
 ![TD-update](annotations/tdupdate.png)
@@ -41,7 +42,7 @@ A simple policy commonly used is the *E-greedy policy*. Here, `E` is also called
 Thus, a high exploration implies that the agent will explore more possibilities of actions at random. 
 
 ### The "Deep" in Deep Q-Learning 
-![go_deeper](annotations/memes/go_deeper.png)
+![go_deeper](annotations/memes/go_deeper.jpg)
 
 The process of Q-Learning aims to create a Q-state vs action matrix for the agent which it uses to maximize its reward. However, this is highly impractical for real-world problems where there can be a huge number of states and actions associated. To solve this problem, it is inferred that the values in the Q-matrix have importance with respect to each other. Therefore, instead of actual values, approximated values can be used so long as the relative importance is preserved. Therefore, to approximate these values, a neural network is used. With the incorporation of neural network, it is thus called Deep Q-Learning. 
 
