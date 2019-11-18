@@ -218,21 +218,21 @@ The mean rewards per episode:
 ## DQN 
 ### Testing on Test data for 100 episodes after training the agent on Google Data
 ![Google100](annotations/RL/GoogleProfits100.png)
-
+<br><br>
 ### Plots for best episodes while testing the agent on Google Data
 Single episode Buy Sell Graph for Google
 ![Googlebuysell](annotations/RL/GoogleBuySell.png)
-
+<br><br>
 Single episode Rewardvalue Graph for Google
 ![Googlerewards](annotations/RL/GoogleRewards.png)
-
+<br><br>
 ### Plots for best episodes while testing the agent on JustDial Data
 Single episode Buy Sell Graph for JustDial
 ![JDbuysell](annotations/RL/JustDialBuySell.png)
-
+<br><br>
 Single episode Rewardvalue Graph for JustDial
 ![JDrewards](annotations/RL/JustDialRewards.png)
-
+<br><br>
 DQN agent shows promise of getting better with more computing power and learning time.
 
 ## SVC
