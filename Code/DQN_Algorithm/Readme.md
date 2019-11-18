@@ -1,8 +1,8 @@
 # Requirements
 
 
-pip install tensorflow
-pip install tensorforce
-pip install numpy
-pip install matplotlib
+pip install tensorflow<br>
+pip install tensorforce<br>
+pip install numpy<br>
+pip install matplotlib<br>
 
