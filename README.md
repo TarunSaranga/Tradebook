@@ -1,5 +1,7 @@
 # Introduction
+
 In this project a Deep Reinforcement Learning Algorithm is developed to increase the profits from a given stock. A supervised learning algorithm has also been implemented using classification to predict the future stock prices and maximize profits using the predictions. The results from both methods are compared.
+
 
 # Motivation
 
@@ -9,6 +11,7 @@ Machine Learning has unprecedented applications in the finance sector. The accur
 ---
 
 # Methods Explored
+
 ## SVM
 **Support-Vector Machines** are supervised learning models that analyse data for classification and regression analyses. Each data point is viewed as a *p*-dimensional vector and the model aims to classify these data points using a *(p-1)*-dimensional hyperplane. The best hyperplane is that which has the largest margin between the two classes. In case the data points are not linearly separable, we map them to a higher dimensional space where they can be easily separated. Kernel functions are used for the same, depending on the type of data in concern.
 
@@ -53,7 +56,6 @@ The working step for Deep Q-Learning is to feed the neural network with an initi
 
 Therefore, Deep Q-Learning is a process in which an agent iteratively learns to maximize its reward in a given environment by exploring many possible actions at each achieved state using an E-greedy policy and a neural network to approximate Q-values.
 
----
 
 # Data
 Any kind of Financial data or stock data is a timeseries value within a certain frequency interval. In this project two different frequency data have been used. 
@@ -99,7 +101,6 @@ These indicators are calculated using TA-lib library.
 ### Lag Plot
 ![JD_lag_plot](annotations/JD_lag_plot.png)
 
----
 
 # Libraries
 
@@ -135,9 +136,6 @@ The agent initialization creates a tensorflow network and initializes all the ne
 
 The agent returns actions based on the state variables passed to it. These actions are passed to the environment. The environment executes these actions and returns the reward associated with that action and also prompts if it is the terminal state. The agent then observes the reward and stores it in its memory for further use.
 
----
-
----
 
 # Methodology
 ## SVM
@@ -212,8 +210,6 @@ The mean rewards per episode are as follows:
 ## Reward Graph with different Learning Rates
 
 
----
-
 # Results
 
 ## DQN 
@@ -245,6 +241,5 @@ Profittttugdkjskfjhdkjf
 
 Buyselll pihoihslfhdlnld
 
----
 
 # Conclusion
