@@ -24,7 +24,7 @@ For a particular day, if the above mentioned calculated increase >= threshold, i
 Tested the approach on GOG.csv, 8 years of daily price data 
 
 ### Evaluation of the above strategies
-I start with a starting cash of 1 million dollars and execute several buy and sell orders on the test data set.
+I start with a **starting cash of 1 million dollars** and execute several buy and sell orders on the test data set.
 The total cash of 1 million is divided into say 10 chunks, and a chunk is used when entering a trade.
 For SVR, if the predicted %age increase >= threshold (1%), then I buy shares with the 1 chunk of cash. These 
 shares will be sold exactly after the fixed number of days mentioned above (14)
