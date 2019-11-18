@@ -343,4 +343,5 @@ Analysing the graphs shows that the RBF Kernel provides maximum profits.
 
 # Conclusion
 We infer that Reinforcement Learning performs better than Support Vector Machine.
+
 ![evil](annotations/memes/evil.jpg)
