@@ -4,7 +4,7 @@ In this project a Deep Reinforcement Learning Algorithm is developed to increase
 # Motivation
 ![rich](annotations/memes/rich.jpg)
 
-Machine Learning has unprecedented applications in the finance sector. The accuracy of prediction has been greatly improved with the advent of Reinforcement Learning and Artificial Intelligence. The methods explored here provide a quantitative juxtaposition of RL and Supervised Learning showing that using the former is much more profitable.
+Machine Learning has unprecedented applications in the finance sector. The accuracy of prediction has been greatly improved with the advent of Reinforcement Learning and Artificial Intelligence. The methods explored here provide a quantitative juxtaposition of RL and Supervised Learning showing that using the former is more profitable.
 
 ---
 
@@ -215,17 +215,31 @@ The mean rewards per episode:
 
 # Results
 
-Testing on Test data for 100 episodes after training the agent.
-## Avg Profits Graph for 100 episodes ##
+## DQN 
+### Testing on Test data for 100 episodes after training the agent on Google Data
+![Google100](annotations/RL/GoogleProfits100.png)
 
-Plots for best episodes while testing the agent.
+### Plots for best episodes while testing the agent on Google Data
+Single episode Buy Sell Graph for Google
+![Googlebuysell](annotations/RL/GoogleBuySell.png)
 
-## Single episode Buy Sell Graph  for Google and JustDial ##
+Single episode Rewardvalue Graph for Google
+![Googlerewards](annotations/RL/GoogleRewards.png)
 
-## Single episode Rewardvalue Graph for Google and JustDial ##
+### Plots for best episodes while testing the agent on JustDial Data
+Single episode Buy Sell Graph for JustDial
+![JDbuysell](annotations/RL/JustDialBuySell.png)
 
+Single episode Rewardvalue Graph for JustDial
+![JDrewards](annotations/RL/JustDialRewards.png)
 
-DQN agent has shown good promise of getting better with more computing power and learning time.
+DQN agent shows promise of getting better with more computing power and learning time.
+
+## SVC
+
+Profittttugdkjskfjhdkjf
+
+Buyselll pihoihslfhdlnld
 
 ---
 
