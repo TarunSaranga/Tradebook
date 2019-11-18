@@ -207,10 +207,25 @@ A DQN Agent is created with a Deep Neural Network of LSTM, CNN and Dense network
 ### Experiment:
 The agent and the environment are initialized with the above specifications. The epsilon decay makes sure that the agent explores different states and stores them in memory for retrieving them later by executing an experience replay. The Learning rate has a huge effect on the performance of the agent, hence, different learning rates have been tried to and best learning rate has been selected.
 The agent has been trained on 1000 episodes with the above specifications.
+The mean rewards per episode:
+## Reward Graph with different Learning Rates
+
 
 ---
 
 # Results
+
+Testing on Test data for 100 episodes after training the agent.
+## Avg Profits Graph for 100 episodes ##
+
+Plots for best episodes while testing the agent.
+
+## Single episode Buy Sell Graph  for Google and JustDial ##
+
+## Single episode Rewardvalue Graph for Google and JustDial ##
+
+
+DQN agent has shown good promise of getting better with more computing power and learning time.
 
 ---
 
