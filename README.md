@@ -1,5 +1,5 @@
 # Introduction
-Reinforcement Learning is a paradigm that iterates over thousands of combinations of actions and achieves a strategy that maximizes the cumulative reward. Deep Reinforcement Learning uses deep neural networks for implementing reinforcement learning. In this project we develop a Deep Reinforcement Learning Algorithm to increase the profits from a given stock. We also implement a supervised learning algorithm using regression to predict the future stock prices and maximize the profits using the predictions. We then contrast the results from both the methods based on different metrics.
+In this project a Deep Reinforcement Learning Algorithm is developed to increase the profits from a given stock. A supervised learning algorithm has also been implemented using regression to predict the future stock prices and maximize the profits using the predictions. The results from both the methodsare contrasted based on different metrics.
 
 # Problem Statement
 
@@ -7,7 +7,7 @@ Reinforcement Learning is a paradigm that iterates over thousands of combination
 
 # Methods Explored
 ## SVM
-Support-Vector Machines are supervised learning models that analyse data for classification and regression analyses. Each data point is viewed as a *p*-dimensional vector and the model aims to classify these data points using a *(p-1)*-dimensional hyperplane. The best hyperplane is that which has the largest margin between the two classes. In case the data points are not linearly separable, we map them to a higher dimensional space where they can be easily separated. We use Kernel functions for this depending on the type of data we have.
+Support-Vector Machines are supervised learning models that analyse data for classification and regression analyses. Each data point is viewed as a *p*-dimensional vector and the model aims to classify these data points using a *(p-1)*-dimensional hyperplane. The best hyperplane is that which has the largest margin between the two classes. In case the data points are not linearly separable, we map them to a higher dimensional space where they can be easily separated. Kernel functions are used for the same, depending on the type of data in concern.
 
 - Linear Kernel is the best option when the dataset is linearly separable.
 
@@ -102,9 +102,9 @@ These indicators are calculated using TA-lib library.
 ## scikit-learn
 
 ## Tensorforce
-Tensorforce is an open source Deep Reinforcement Library that abstracts Reinforcement Learning Primitives with Tensorflow backend. It provides modularity and gives us the freedom to concentrate on the application rather than the specific implementation of the algorithm which is similar for every application. There are four high-level abstractions: Environment, Agent, Runner and Model. The Model abstraction sits inside the Agent and gives us the ability to change the internal mechanisms of the Agent itself. The Environment abstract is to help create custom user environment details. Runner is to execute the model.
+Tensorforce is an open source Deep Reinforcement Library that abstracts Reinforcement Learning Primitives with Tensorflow backend. It provides modularity and gives us the freedom to concentrate on the application rather than the specific implementation of the algorithm which is similar for every application. There are four high-level abstractions: *Environment, Agent, Runner and Model*. The Model abstraction sits inside the Agent and gives us the ability to change the internal mechanisms of the Agent itself. The Environment abstract is to help create custom user environment details. Runner is used to execute the model.
 
-```python
+```python3
 import tensorforce.agents import agents
 import tensorforce.environments import Environment
 
@@ -128,12 +128,10 @@ agent.close()
 environment.close()
 ```
 
-The Environment class is created by inheriting the Environment abstract.
-The agent is created by providing required parameters as an input for the Agent class.
-The agent initialization creates the tensorflow network and initializes all the network connections and memory required to store the state variables and action rewards.
-The agents returns actions based on the state variable passed to it. These actions are passed to environment.
-The environment executes these actions and gives back the reward associated with that action and if it is the terminal state.
-The agent observes the reward and stores it in its memory to retrieve it another time.
+The Environment class is created by inheriting the Environment abstract. The agent is created by providing required parameters as an input for the Agent class.
+The agent initialization creates the tensorflow network and initializes all the network connections along with the memory required to store the state variables and action rewards.
+
+The agent returns actions based on the state variables passed to it. These actions are passed to environment. The environment executes these actions and returns the reward associated with that action and also prompts if it is the terminal state. The agent then observes the reward and stores it in its memory to retrieve it another time.
 
 ---
 
@@ -141,15 +139,17 @@ The agent observes the reward and stores it in its memory to retrieve it another
 
 # Methodology
 ## SVM
-For each of our datasets we define an additional set of indicators along with those defined for Reinforcement Learning:
-O-C - Defines the difference between opening and closing prices.
-STD_10 - This is the Standard Deviation with a rolling window 10.
+For each of the datasets an additional set of indicators are defined, on top of those defined for Reinforcement Learning -
+O-C
+: Defines the difference between opening and closing prices.
+STD_10 
+: This is the Standard Deviation with a rolling window 10.
 
 The decision labels are decided according to the trend in the market close prices.
 - If the next close price is higher than the current close price, the model decides to buy. This is because the price is expected to further rise increasing the value of stocks possessed.
-- If the next close price is lesser than the current close price, the model decides to sell. This is done so that in the expected eventuality where the price continues to fall, we can minimise the loss incurred.
+- If the next close price is lesser than the current close price, the model decides to sell. This is done to minimize losses incurred in the expected eventuality where the price continues to fall.
 
-We then simulate the predictions with testing data starting with base cash and no stocks and see the cumulative profit at the end of each cycle. The simulation works on two basic conditions:
+The predictions are then simulated with testing data starting with base cash and no stocks and the cumulative profit at the end of each cycle are monitored. The simulation works on two basic conditions:
 - If the model predicts sale of stocks and number of stocks owned is not 0, we sell at the current price. The profit is calculated as the difference between the current price and the price at which stocks were bought. The profit is also added to the cash possessed.
 - If the model predicts purchasing of stocks and we have enough monetary reserves, the purchase is made at the current price (this is henceforth stored as the cost price of the stock) and the cash reserves are depleted accordingly.
 
