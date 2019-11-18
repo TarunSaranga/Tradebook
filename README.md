@@ -40,7 +40,7 @@ Thus, a high exploration implies that the agent will explore more possibilities 
 
 ### The "Deep" in Deep Q-Learning 
 ![go_deeper](annotations/memes/go_deeper.jpg)
-<img align="center" src="annotations/memes/go_deeper.jpg" />
+<center> <img src="annotations/memes/go_deeper.jpg" /> </center>
 
 The process of Q-Learning aims to create a Q-state vs action matrix for the agent which it uses to maximize its reward. However, this is highly impractical for real-world problems where there can be a huge number of states and actions associated. To solve this problem, it is inferred that the values in the Q-matrix have importance with respect to each other. Therefore, instead of actual values, approximated values can be used so long as the relative importance is preserved. Therefore, to approximate these values, a neural network is used. With the incorporation of neural network, it is thus called Deep Q-Learning. 
 
