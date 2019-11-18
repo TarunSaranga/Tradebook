@@ -163,33 +163,33 @@ The cumulative profit is calculated at the end and plotted.
 Analysing the graphs shows that the RBF Kernel provides maximum profits.
 
 ## DQN
-## Experimental Setup
 
 Before conducting the experiments, the Agent and the Environment are created.
 
 ### Creating the Trading environment:
 
-The environment is created by inheriting the Environment abstract from the Tensorforce. The environment has 6 states and 3 actions.
-These actions are Buy, Sell and Hold. The actions are only performed when a specific condition is met.(example- The agent cannot execute action of Sell without having any stocks in its inventory).
+The environment is created by inheriting from the Environment abstract has 6 states and 3 actions.
 
-The 6 states that make the state space of the enviroment are -
-- Cumulative profits until
-- Stock Holding indicator
-- price vector with current price and previous 10 price values
-- close/sma
-- BB value 
-- RSI indicators.
+These actions are **Buy, Sell and Hold**. The actions are only performed when a specific condition is met (Example - The agent cannot Sell without having any stocks in its inventory).
+
+The 6 states are -
+- **Cumulative Profits** till the current timestep,
+- **Stocks Held**, boolean value,
+- **Price Vector**, including current price and 10 previous prices,
+- **Close/SMA**,
+- **BB value**
+- **RSI**.
 
 #### Execution method:
-When the agent gives actions to the environment it will execute the actions and changes the environment's states.
-- Buy Condition: Buy, If no stocks exists and has enough cash to Buy.
-- Sell Condition: Sell, If stocks exist or it is the final timestep.
-- Hold Condition: Hold, if stock exists.
+When the agent gives actions to the environment it will execute the actions and change the environment's states thus:
+- *Buy*, if no stocks exists and there is enough cash.
+- *Sell*, if stocks exist or it is the final timestep.
+- *Hold stocks*, if stock exists.
 
 #### Reward Function:
-- Buy reward: Buy reward is equal to one-tenth of the current stock price.
-- Sell reward: Sell reward is equal to two times the profit gained by selling the stock.
-- Hold Reward: If the current price is more than previous then hold reward is one-twentyth of current price and if the current price is less than previous then a negative reward of one-fifteth of the current price.
+- Buy reward granted is equal to one-tenth of the current stock price.
+- Sell reward is equal to two times the profit gained by selling the stock.
+- Hold Reward is awarded depending on the current price. If the current price is more than previous then the reward is one-twentieth of current price and if the current price is less, a negative reward of one-fiftieth of the current price is given.
 
 ### Creating the DQN Agent:
 A DQN Agent is created with a Deep Neural Network of LSTM, CNN and Dense network Layers.
