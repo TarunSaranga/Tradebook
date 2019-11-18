@@ -302,4 +302,8 @@ Cumulative Profit Trend:
 ![KernelComp](annotations/svc/svc_jd_kernel_cmp.png)
 
 Analysing the graphs shows that the RBF Kernel provides maximum profits.
+
 # Conclusion
+We infer that Reinforcement Learning performs better than Supervised Learning.
+
+![Had.](annotations/memes/evil%20meme.jpg)
