@@ -238,7 +238,7 @@ DQN agent shows promise of getting better with more computing power and learning
 ## SVM
 
 Buy Sell Graph for Google Data
-
+![Googlebuysell](annotations/svc/svc_google_singlas.png)
 
 Buy Sell Graph for JustDial Data
 ![JDbuysell](annotations/svc/svm_jd_signals.png)
