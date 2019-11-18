@@ -240,9 +240,7 @@ Single episode Buy Sell Graph for JustDial:
 Single episode Rewardvalue Graph for JustDial:
 ![JDrewards](annotations/RL/JustDialRewards.png)
 <br><br>
-
 DQN agent shows promise of getting better with more computing power and learning time.
-
 ## SVC
 
 Profittttugdkjskfjhdkjf
