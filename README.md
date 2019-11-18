@@ -158,37 +158,6 @@ The predictions are then simulated with testing data starting with some base cas
 
 The cumulative profit is calculated at the end and plotted.
 
-## SVR/SVC
-
-I used Support Vector Regression and Classification to predict if the price is going to rise in the future.
-
-All the feature data is also standardised using StandardScaler, to avoid any scaling issues.
-The features used are open,high,low,adj_close,volume,close_sma,bb,rsi - open, high,low,adj_close indicate the price levels on a particular day
-and the rest are the indicator values on a particular day.
-The dataset is split into 80% training and 20% test data.
-
-### SVR
-For SVR, the label for each row is the percentage increase in price after a fixed number of days (14).
-At each day, we look at the open price 14 days ahead, and calculate the %age increase in price compared to the current day.
-This numeric value is calculated as the labels for the data set.
-
-### SVC
-The above same setup is used for SVC also, except the labels for SVC belong to 2 classes - 0 and 1
-We chose a particular threshold %age (say 1%).
-For a particular day, if the above mentioned calculated increase >= threshold, it gets the label 1, otherwise 0
-
-
-### Evaluation of the above strategies
-I start with a starting cash of 1 million dollars and execute several buy and sell orders on the test data set.
-The total cash of 1 million is divided into say 10 chunks, and a chunk is used when entering a trade.
-For SVR, if the predicted %age increase >= threshold (1%), then I buy shares with the 1 chunk of cash. These 
-shares will be sold exactly after the fixed number of days mentioned above (14)
-Similarly for SVC, if the predicted label for the day is 1, then I buy shares.
-During any point of time, we will be having at max, 10 trade entries, which will each be exited (sold) after the fixed 
-number of days.
-After simulating all the trades, we calculate the portfolio value at the end day of the testset, which is the sum of remaining 
-cash and the value of shares holding
-
 ## DQN
 
 Before conducting the experiments, the Agent and the Environment are created.
@@ -345,3 +314,19 @@ Analysing the graphs shows that the RBF Kernel provides maximum profits.
 We infer that Reinforcement Learning performs better than Support Vector Machine.
 
 ![evil](annotations/memes/evil.jpg)
+
+# References
+1.  Xiong, Z., Liu, X., Zhong, S., Yang, H., & Elwalid, A. (2018). Practical Deep Reinforcement Learning Approach for Stock Trading. ArXiv, abs/1811.07522.
+2.  Li, Y. (2017). Deep Reinforcement Learning: An Overview. ArXiv, abs/1701.07274.
+3.  Azhikodan, Akhil & Bhat, Anvitha & Jadhav, Mamatha. (2019). Stock Trading Bot Using Deep Reinforcement Learning. 10.1007/978-981-10-8201-6_5.
+4.  Jiang, Z., Xu, J.D., et al. A Deep Reinforcement Learning Framework for the Financial Portfolio Management Problem. ArXiv:1706.10059, 2017.
+5.  Playing Atari with Deep Reinforcement Learning, Volodymyr Mnih and Koray Kavukcuoglu and David Silver and Alex Graves and Ioannis Antonoglou and Daan Wierstra and Martin Riedmiller,arXiv, 2013
+6.  Mnih, V., et al., Playing atari with deep reinforcement learning. arXiv preprint arXiv:1312.5602, 2013.
+7.  Silver, D., et al., Mastering the game of go without human knowledge. Nature, 2017.550(7676): p. 354.
+8.  Hochreiter, S. and J. Schmidhuber, Long short-term memory. Neural computation, 1997.9(8): p. 1735-1780.
+9.  Gers, F.A., J. Schmidhuber, and F. Cummins, Learning to forget: Continual prediction with LSTM. 1999.
+10.  Gers, F.A., D. Eck, and J. Schmidhuber, Applying LSTM to time series predictable through time-window approaches, in Neural Nets WIRN Vietri-01. 2002, Springer. p. 193-200.
+11.  Malhotra, P., et al. Long short term memory networks for anomaly detection in time series.in Proceedings. 2015. Presses universitaires de Louvain.
+12.  Lipton, Z.C., et al., Learning to diagnose with LSTM recurrent neural networks. arXiv preprint arXiv:1511.03677, 2015.
+13.  Cho, K., et al., Learning phrase representations using RNN encoder-decoder for statistical machine translation. arXiv preprint arXiv:1406.1078, 2014.
+14.  Chung, J., et al., Empirical evaluation of gated recurrent neural networks on sequence modeling. arXiv preprint arXiv:1412.3555, 2014.
