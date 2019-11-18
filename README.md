@@ -136,9 +136,15 @@ The agent observes the reward and stores it in its memory to retrieve it another
 
 # Methodology
 ## SVM
-### Linear
+For each of our datasets we define an additional set of indicators along with those defined for Reinforcement Learning:
+O-C - Defines the difference between opening and closing prices.
+STD_10 - This is the Standard Deviation with a rolling window 10.
 
-### Ply....
+The decision labels are decided according to the trend in the market close prices.
+- If the next close price is higher than the current close price, the model decides to buy. This is because the price is expected to further rise increasing the value of stocks possessed.
+- If the next close price is lesser than the current close price, the model decides to sell. This is done so that in the expected eventuality where the price continues to fall, we can minimise the loss incurred.
+
+
 
 ## DQN
 
