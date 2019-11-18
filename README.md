@@ -131,9 +131,9 @@ environment.close()
 ```
 
 The Environment class is created by inheriting the Environment abstract. The agent is created by providing required parameters as an input for the Agent class.
-The agent initialization creates the tensorflow network and initializes all the network connections along with the memory required to store the state variables and action rewards.
+The agent initialization creates a tensorflow network and initializes all the network connections along with the memory required to store the state variables and action rewards.
 
-The agent returns actions based on the state variables passed to it. These actions are passed to environment. The environment executes these actions and returns the reward associated with that action and also prompts if it is the terminal state. The agent then observes the reward and stores it in its memory to retrieve it another time.
+The agent returns actions based on the state variables passed to it. These actions are passed to the environment. The environment executes these actions and returns the reward associated with that action and also prompts if it is the terminal state. The agent then observes the reward and stores it in its memory for further use.
 
 ---
 
