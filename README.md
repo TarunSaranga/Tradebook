@@ -2,10 +2,10 @@
 In this project a Deep Reinforcement Learning Algorithm is developed to increase the profits from a given stock. A supervised learning algorithm has also been implemented using classification to predict the future stock prices and maximize profits using the predictions. The results from both methods are compared.
 
 # Motivation
-![rich](annotations/memes/rich.jpg)
 
 Machine Learning has unprecedented applications in the finance sector. The accuracy of prediction has been greatly improved with the advent of Reinforcement Learning and Artificial Intelligence. The methods explored here provide a quantitative juxtaposition of RL and Supervised Learning showing that using the former is more profitable.
 
+![rich](annotations/memes/rich.jpg)
 ---
 
 # Methods Explored
@@ -22,7 +22,7 @@ Machine Learning has unprecedented applications in the finance sector. The accur
 ### Q-Learning 
 **Reinforcement Learning** is a process in which an *agent* is confined to an *environment* and tasked with learning how to *behave optimally* under different circumstances by interacting with the environment. The different circumstances the agent is subjected to, are called *states*. The goal of the agent is to know what *action*, amongst a set of allowed actions, must it take such as to yield maximum *reward*. 
 
-**Q-Learning** is a type of Reinforcement Learning which uses *Q-Values* i.e., action values, to improve the behaviour of the agent in an iterative process. These Q-Values are defined for states and actions. Thus, `Q(S, A)` is an estimate of the quality of the action `A` at state `Q`. `Q(S, A)` can be represented in terms of the Q-value of the next state `S'` as follows - 
+**Q-Learning** is a type of RL which uses *Q-Values* i.e., action values, to improve the behaviour of the agent in an iterative process. These Q-Values are defined for states and actions. Thus, `Q(S, A)` is an estimate of the quality of the action `A` at state `Q`. `Q(S, A)` can be represented in terms of the Q-value of the next state `S'` as follows - 
 
 ![Bellman](annotations/bellman.png)
 
@@ -32,9 +32,9 @@ This is the *Bellman Equation*. It shows that the maximum future reward equals t
 
 ![TD-update](annotations/tdupdate.png)
 Here, 
-- S<sub>t</sub> is the current state and A<sub>t</sub> is the action picked according to a *policy*.
+- S<sub>t</sub> is the current state and A<sub>t</sub> is the action picked according to the *policy*.
 - S<sub>t+1</sub> is the next state and A<sub>t+1</sub> is the next action considered to effectively have maximum Q-value in the next state.
-- `r` is the current reward obtained as a result of the current action.
+- `r` is the current reward obtained on the current action.
 - `Gamma` has values in the interval (0, 1] and is called the *discount factor* for future rewards. Future rewards are considered to be less valuable than current ones and are therefore discounted.
 - `Alpha` is the learning rate or the step length for updating the Q-values. 
 
@@ -42,14 +42,14 @@ A simple policy commonly used is the *E-greedy policy*. Here, `E` is also called
 
 - The agent chooses the action with the highest Q-value with a probability `1-E`.
 - The agent chooses the action at random with a probability `E`.
-Thus, a high exploration implies that the agent will explore more possibilities of actions at random. 
+Thus, a high exploration implies that the agent will explore more actions at random. 
 
 ### The "Deep" in Deep Q-Learning 
 ![go_deeper](annotations/memes/go_deeper.jpg)
 
-The process of Q-Learning aims to create a Q-state vs action matrix for the agent which it uses to maximize its reward. However, this is highly impractical for real-world problems where there can be a huge number of states and actions associated. To solve this problem, it is inferred that the values in the Q-matrix have importance with respect to each other. Therefore, instead of actual values, approximated values can be used so long as the relative importance is preserved. Therefore, to approximate these values, a neural network is used. With the incorporation of neural network, it is thus called Deep Q-Learning. 
+Q-Learning aims to create a Q-state vs action matrix for the agent which it uses to maximize its reward. However, this is highly impractical for real-world problems where there can be a huge number of states and actions associated. To solve this problem, it is inferred that the values in the Q-matrix are related to each other. Therefore, instead of actual values, approximate values can be used so long as the relative importance is preserved. Therefore, to approximate these values, a neural network is used. Due to the incorporation of neural network, it is called Deep Q-Learning. 
 
-The working step for Deep Q-Learning is to feed the neural network with an initial state, which returns the Q-value of all possible actions as a result. *Experience Replay* is essentially a way of logically separating the learning phase from gaining experience. The system stores the agent's experience e<sub>t</sub> = (s<sub>t</sub>, a<sub>t</sub>, r<sub>t</sub>, s<sub>t+1</sub>) and learns from it. This is an advantage because the model makes use of previous experience by learning from it multiple times. When gaining real-world experience is expensive, experience replay is used to get maximum learning from previous experiences.
+The working step for Deep Q-Learning is to feed the neural network with an initial state, which returns the Q-value of all possible actions as a result. *Experience Replay* is essentially a way of logically separating the learning phase from gaining experience. The system stores the agent's experience e<sub>t</sub> = (s<sub>t</sub>, a<sub>t</sub>, r<sub>t</sub>, s<sub>t+1</sub>) and learns from it. This gives an advantage because the model makes use of previous experience by learning from it multiple times. When gaining real-world experience is expensive, experience replay is used to get maximum learning from previous experiences.
 
 Therefore, Deep Q-Learning is a process in which an agent iteratively learns to maximize its reward in a given environment by exploring many possible actions at each achieved state using an E-greedy policy and a neural network to approximate Q-values.
 
