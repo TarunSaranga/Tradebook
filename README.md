@@ -1,8 +1,11 @@
 # Introduction
-In this project a Deep Reinforcement Learning Algorithm is developed to increase the profits from a given stock. A supervised learning algorithm has also been implemented using regression to predict the future stock prices and maximize the profits using the predictions. The results from both the methodsare contrasted based on different metrics.
+In this project a Deep Reinforcement Learning Algorithm is developed to increase the profits from a given stock. A supervised learning algorithm has also been implemented using regression to predict the future stock prices and maximize the profits using the predictions. The results from both the methods are contrasted based on different metrics.
 
 # Motivation
 ![rich](annotations/memes/rich.jpg)
+
+Machine Learning has unprecedented applications in the finance sector. The accuracy of prediction has been greatly improved with the advent of Reinforcement Learning and Artificial Intelligence. The methods explored here provide a quantitative juxtaposition of RL and Supervised Learning showing that using the former is much more profitable.
+
 ---
 
 # Methods Explored
