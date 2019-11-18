@@ -408,9 +408,7 @@ RMSE of Test set:  2.58843
 We can observe the Support vector trading strategy, correctly predicting a downfall, and avoiding any buy orders
 during a continuous decline in price.
 
-Also, we can see, Support Vector classification performing better than the Regression trading model.
-
-Through this experiment, we can observe that SVC model is able to predict between
+Also, we can see, Support Vector classification performing better than the Regression trading model
 
 
 # Conclusion
