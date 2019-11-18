@@ -267,4 +267,32 @@ Cumulative Profit Trend:
 
 ![KernelComp](annotations/svc/svc_google_kernel_cmp.png)
 
+### JustDial Test Data
+#### Linear Kernel Plot
+
+Profit Trend:
+![LinearProfit](annotations/svc/svc_jd_linear_profit.png)
+
+Cumulative Profit Trend:
+![LinearProfitCum](annotations/svc/svc_jd_linear_profit_cum.png)
+
+#### Radial Basis Function Kernel Plot
+
+Profit Trend:
+![RBFProfit](annotations/svc/svc_jd_rbf_profit.png)
+
+Cumulative Profit Trend:
+![RBFProfitCum](annotations/svc/svc_jd_rbf_profit_cum.png)
+
+#### Polynomial Kernel Plot
+
+Profit Trend:
+![PolyProfit](annotations/svc/svc_jd_poly_profit.png)
+
+Cumulative Profit Trend:
+![PolyProfitCum](annotations/svc/svc_jd_poly_profit_cum.png)
+
+#### Comparison of different Kernels
+
+![KernelComp](annotations/svc/svc_jd_kernel_cmp.png)
 # Conclusion
