@@ -109,5 +109,3 @@ We can observe the Support vector trading strategy, correctly predicting a downf
 during a continuous decline in price.
 
 Also, we can see, Support Vector classification performing better than the Regression trading model.
-
-Through this experiment, we can observe that SVC model is able to predict between
