@@ -2,7 +2,7 @@
 In this project a Deep Reinforcement Learning Algorithm is developed to increase the profits from a given stock. A supervised learning algorithm has also been implemented using regression to predict the future stock prices and maximize the profits using the predictions. The results from both the methodsare contrasted based on different metrics.
 
 # Motivation
-![rich](annotations/rich.png)
+![rich](annotations/memes/rich.jpg)
 ---
 
 # Methods Explored
