@@ -86,7 +86,7 @@ Similarly a red vertical line indicates a loss on the trade.
 **SVC metrics :**
 
 ```mermaid
-Accuracy of Test set = 93.35% (Percentage of correct predictions of the labels)
+Accuracy of Train set = 93.35% (Percentage of correct predictions of the labels)
 
 Precision of Test set = 76.95% (Percentage of True Positives out of Predicted Positives)
 ```
