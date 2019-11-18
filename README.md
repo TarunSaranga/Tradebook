@@ -205,7 +205,8 @@ The agent and the environment are initialized with the above specifications. The
 The agent has been trained on 1000 episodes with the above specifications.
 The mean rewards per episode are as follows:
 
-## Reward Graph with different Learning Rates
+### Reward Graph with different Learning Rates
+![Rewardfunc](annotations/RL/RewardFunction.jpg)
 
 
 # Results
