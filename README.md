@@ -237,6 +237,12 @@ DQN agent shows promise of getting better with more computing power and learning
 
 ## SVM
 
+Buy Sell Graph for Google Data
+
+
+Buy Sell Graph for JustDial Data
+![JDbuysell](annotations/svc/svm_jd_signals.png)
+
 ### Google Test Data
 #### Linear Kernel Plot
 
