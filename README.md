@@ -334,7 +334,10 @@ Cumulative Profit Trend:
 
 Analysing the graphs shows that the RBF Kernel provides maximum profits.
 
+## Comparison between DQN and SVC - Protfolio Returns
 
-
+|       | **DQN** | **SVC** |
+| **Google** | 27.3 % | 19 % |
+| **JustDial** | 2.38 % | 1.1 % |
 
 # Conclusion
