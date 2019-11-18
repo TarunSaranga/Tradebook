@@ -71,10 +71,34 @@ The base line portfolio (Buy and Hold) is also shown in the plots for comparison
 ![alt text](https://github.com/TarunSaranga/Tradebook/blob/master/Code/SVM/SVR/svr_.png)
 
 
-**Plots with good and bad trade entries :**
+**Plots with good and bad trade entries GOOGL 2015-01-01 to 2017-02-01 :**
 A smaller period is selected to show the good and bad trade entries of the SVR/SVC strategies.
 A green vertical line indicates the buy trade resulted in a profit after the fixed number of days when exited (sold).
 Similarly a red vertical line indicates a loss on the trade. 
+
+|                |Final Portfolio Value          |Cumulative Return                        |
+|----------------|-------------------------------|-----------------------------|
+|Buy and Hold    |`1,032,791$`            |3.27%          |
+|SVC             |`1,097,871$`            |9.78%            |
+|SVR             |`1,063,512$`            |6.35%|
+
+
+**SVC metrics :**
+
+```mermaid
+Accuracy of Test set = 93.35% (Percentage of correct predictions of the labels)
+
+Precision of Test set = 76.95% (Percentage of True Positives out of Predicted Positives)
+```
+
+**SVR metrics :**
+
+```mermaid
+RMSE of Training set: 5.2779
+RMSE of Test set:  2.58843
+```
+
+
 
 ![alt text](https://github.com/TarunSaranga/Tradebook/blob/master/Code/SVM/SVR/svc_trades.png)
 ![alt text](https://github.com/TarunSaranga/Tradebook/blob/master/Code/SVM/SVR/svr_trades.png)
