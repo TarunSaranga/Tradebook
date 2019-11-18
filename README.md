@@ -162,6 +162,50 @@ Using the RBF kernel gives the best results on the testing data with maximum pro
 Using a Polynomial Kernel with degree 3 yields the poorest result of all.
 
 ## DQN
+## Experimental Setup
+
+Before conducting the experiments, the Agent and the Environment are created.
+
+### Creating the Trading environment:
+
+The environment is created by inheriting the Environment abstract from the Tensorforce. The environment has 6 states and 3 actions.
+The 3 actions are Buy, Sell and Hold. These 3 actions are only performed when a specific condition is met.(example: You cannot Sell when you don't have any stock)
+The 6 states are Cumulative profits until, Stock Holding indicator, price vector with current price and previous 10 price values, close/sma, BB value and RSI indicators.
+Together these make up the state space of the Environment.
+
+#### Execution method:
+When the agent gives actions to the environment it will execute the actions and changes the environment's states.
+Buy Condition: Buy, If no stocks exists and has enough cash to Buy.
+Sell Condition: Sell, If stocks exist or it is the final timestep.
+Hold Condition: Hold, if stock exists.
+
+#### Reward Function:
+Buy reward: Buy reward is equal to one-tenth of the current stock price.
+
+Sell reward: Sell reward is equal to two times the profit gained by selling the stock.
+
+Hold Reward: If the current price is more than previous then hold reward is one-twentyth of current price and if the current price is less than previous then a negative reward of one-fifteth of the current price.
+
+### Creating the DQN Agent:
+A DQN Agent is created with a Deep Neural Network of LSTM, CNN and Dense network Layers.
+#### Deep Network specifications:
+128 x 4 LSTM Network with relu activation.
+
+128 x 1 CNN Network with relu activation.
+
+128 x 1 Dense Network with relu activation.
+
+#### Agent Specifications:
+Learning Rate = 0.0001
+Discount Factor = 0.9
+Epsilon Decay factor = 0.4  (units: Episodes)
+Replay Memory = maximum episode timesteps
+
+### Experiment:
+The agent and the environment are initialized with the above specifications.
+The epsilon decay makes sure that the agent explores different states and stores them in memory later retrieving them executing an experience replay.
+The Learning rate has a huge effect on the performance of the agent, hence, different learning rates have been tried to and best learning rate has been selected.
+The agent has been trained on 1000 episodes with the above specifications.
 
 ---
 
