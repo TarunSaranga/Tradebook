@@ -1,7 +1,5 @@
 # SVR/SVC for Trading !
 
-Tested the approach on GOG.csv, 8 years data 
-
 
 # Approach
 
@@ -22,6 +20,8 @@ The above same setup is used for SVC also, except the labels for SVC belong to 2
 We chose a particular threshold %age (say 1%).
 For a particular day, if the above mentioned calculated increase >= threshold, it gets the label 1, otherwise 0
 
+### Data
+Tested the approach on GOG.csv, 8 years of daily price data 
 
 ### Evaluation of the above strategies
 I start with a starting cash of 1 million dollars and execute several buy and sell orders on the test data set.
